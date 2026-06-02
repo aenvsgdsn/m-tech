@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="M-Tech Production & Marketing — Pakistan's leading platform for tech internships, courses, digital services, and career opportunities." />
+    <meta name="keywords" content="M-Tech, internship Pakistan, tech courses, digital marketing, web development, cybersecurity, AI courses, Haripur" />
+    <meta property="og:title" content="M-Tech Production & Marketing" />
+    <meta property="og:description" content="Elevate Your Digital Presence & Career Today. 1000+ students trained, 75+ courses, 21 mentors." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1A3C6E" />
+    <title>M-Tech Production & Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      #preloader {
+        position: fixed;
+        inset: 0;
+        background: #0E1E3A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      .spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid rgba(0, 180, 216, 0.2);
+        border-left-color: #00B4D8;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin { 100% { transform: rotate(360deg); } }
+      body.loaded #preloader { opacity: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="preloader"><div class="spinner"></div></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+        setTimeout(() => {
+          const preloader = document.getElementById('preloader');
+          if (preloader) preloader.remove();
+        }, 500);
+      });
+    </script>
+  </body>
+</html>

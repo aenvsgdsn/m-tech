@@ -1,0 +1,19 @@
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: start;
+}
+.faq-sidebar { position: sticky; top: 100px; }
+.faq-cta {
+  padding: 28px;
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+  border: none;
+}
+.faq-cta h4 { color: var(--white); margin-bottom: 8px; }
+.faq-cta p { color: rgba(255,255,255,0.72); font-size: 0.88rem; }
+
+@media (max-width: 900px) {
+  .faq-layout { grid-template-columns: 1fr; }
+  .faq-sidebar { position: static; }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "category": "Web Development",
+    "services": [
+      "Custom Website Design", "E-Commerce Development", "WordPress Development",
+      "Landing Page Design", "Web App Development", "Website Maintenance", "SEO Optimization"
+    ]
+  },
+  {
+    "category": "App Development",
+    "services": [
+      "Android App Development", "iOS App Development", "Flutter Cross-Platform Apps",
+      "React Native Apps", "App UI/UX Design", "App Store Deployment"
+    ]
+  },
+  {
+    "category": "Cybersecurity",
+    "services": [
+      "Penetration Testing", "Vulnerability Assessment", "Network Security Audit",
+      "Web App Security", "Firewall Setup", "Security Training"
+    ]
+  },
+  {
+    "category": "AI & Automation",
+    "services": [
+      "AI Chatbot Development", "Machine Learning Models", "Data Analysis",
+      "Process Automation", "NLP Solutions", "Computer Vision"
+    ]
+  },
+  {
+    "category": "Digital Marketing",
+    "services": [
+      "Social Media Management", "SEO & SEM", "Google Ads",
+      "Facebook Ads", "Content Marketing", "Email Marketing", "Brand Strategy"
+    ]
+  },
+  {
+    "category": "Design & Branding",
+    "services": [
+      "Logo Design", "Brand Identity", "Graphic Design",
+      "Video Editing", "Motion Graphics", "Social Media Graphics", "Presentation Design"
+    ]
+  },
+  {
+    "category": "DevOps & Cloud",
+    "services": [
+      "AWS Deployment", "Docker & Kubernetes", "CI/CD Pipeline Setup",
+      "Cloud Migration", "Server Management", "Database Optimization"
+    ]
+  },
+  {
+    "category": "Blockchain",
+    "services": [
+      "Smart Contract Development", "NFT Marketplace", "DeFi Solutions",
+      "Blockchain Consulting", "Web3 Integration"
+    ]
+  },
+  {
+    "category": "Academic & Freelancing",
+    "services": [
+      "Final Year Project (FYP) Support", "Research Paper Writing",
+      "Thesis Assistance", "Technical Report Writing", "Freelancing Mentorship",
+      "Portfolio Development", "LinkedIn Profile Optimization"
+    ]
+  }
+]

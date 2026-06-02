@@ -1,0 +1,182 @@
+.programs-hero {
+  position: relative;
+  overflow: hidden;
+}
+.programs-hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(14,30,58,0.92) 0%, rgba(26,60,110,0.85) 100%),
+    url('/assets/programs-bg.png') center/cover no-repeat;
+  z-index: 0;
+}
+
+.programs-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color var(--transition);
+}
+.search-input:focus { border-color: var(--navy); }
+.cat-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.cat-btn {
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border: 1.5px solid var(--border);
+  color: var(--text-mid);
+  background: var(--white);
+  transition: var(--transition);
+}
+.cat-btn:hover, .cat-btn.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.course-card { padding: 22px; }
+.course-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.level-dot { width: 10px; height: 10px; border-radius: 50%; }
+.course-card h4 { font-size: 0.95rem; margin-bottom: 10px; }
+.course-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  margin-bottom: 14px;
+}
+.btn-sm { padding: 8px 16px; font-size: 0.85rem; }
+.no-results { color: var(--text-mid); grid-column: 1/-1; text-align: center; padding: 40px 0; }
+
+/* Internship */
+.internship-info { padding: 28px; }
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.info-grid div { display: flex; flex-direction: column; gap: 4px; }
+.info-grid strong { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-light); }
+.info-grid span { font-weight: 600; color: var(--text-dark); font-size: 0.92rem; }
+/* Unique Internship Cards */
+.intern-track-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.intern-track-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--navy);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.intern-track-card:hover::before { transform: scaleX(1); }
+.intern-track-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.intern-track-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: rgba(26,60,110,0.08);
+  color: var(--navy);
+  font-size: 1.5rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s ease;
+}
+.intern-track-card:hover .intern-track-icon {
+  background: var(--navy);
+  color: var(--white);
+  transform: rotate(-10deg) scale(1.1);
+}
+.intern-track-header h4 { margin: 0; font-size: 1.1rem; }
+.intern-track-desc {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.intern-track-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  color: var(--text-mid);
+  margin-bottom: 24px;
+}
+.intern-track-meta .dot { color: var(--border); }
+.intern-apply-btn { width: 100%; justify-content: center; }
+
+/* Two phase */
+.two-phase {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 40px;
+}
+.phase { flex: 1; }
+.phase-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(26,60,110,0.08);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.phase h4 { margin-bottom: 8px; }
+.phase p { font-size: 0.9rem; margin-bottom: 12px; }
+.phase-divider { font-size: 2rem; color: var(--gold); flex-shrink: 0; }
+
+/* Bootcamps */
+.bootcamp-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+.bootcamp-card h4 { margin-bottom: 4px; }
+.bootcamp-card p { font-size: 0.85rem; color: var(--text-mid); margin: 0; }
+
+@media (max-width: 1024px) {
+  .courses-grid { grid-template-columns: repeat(2, 1fr); }
+  .info-grid { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); } /* ensure internship cards stack cleanly */
+}
+@media (max-width: 768px) {
+  .two-phase { flex-direction: column; text-align: center; }
+  .phase-divider { transform: rotate(90deg); }
+  .courses-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,111 @@
+.community-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.community-stats {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--text-mid);
+  font-size: 0.88rem;
+}
+
+/* Interns */
+.interns-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.intern-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+.intern-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.intern-avatar {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+.intern-info { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.intern-info h4 { font-size: 0.88rem; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.intern-track { font-size: 0.72rem; }
+.intern-dates { font-size: 0.72rem; color: var(--text-light); margin: 0; }
+
+/* Mentors */
+.mentors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 20px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+.mentor-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.mentor-avatar {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 16px rgba(0,180,216,0.25);
+}
+.mentor-info { flex: 1; }
+.mentor-info h4 { margin-bottom: 4px; font-size: 1rem; }
+.mentor-role { font-size: 0.8rem; color: var(--teal); font-weight: 600; margin: 0 0 10px; }
+.mentor-skills { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-bottom: 10px; }
+.mentor-skills .tag { font-size: 0.72rem; }
+.mentor-type-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.badge-teal { background: rgba(0,180,216,0.1); color: var(--teal); }
+.badge-navy { background: rgba(26,60,110,0.1); color: var(--navy); }
+.mentor-linkedin-icon {
+  position: absolute;
+  top: 14px; right: 14px;
+  color: var(--text-light);
+  transition: color var(--transition);
+}
+.mentor-card:hover .mentor-linkedin-icon { color: #0A66C2; }
+
+/* Ambassador */
+.ambassador-info { border: none; }
+
+@media (max-width: 1024px) {
+  .interns-grid { grid-template-columns: repeat(3, 1fr); }
+  .mentors-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .interns-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .mentors-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .interns-grid { grid-template-columns: 1fr; }
+}

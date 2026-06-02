@@ -1,0 +1,33 @@
+.tab-switcher { }
+.tab-bar {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 36px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+.tab-btn {
+  padding: 12px 22px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  white-space: nowrap;
+  position: relative;
+  transition: color var(--transition);
+}
+.tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0; right: 0;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.tab-btn.active { color: var(--navy); }
+.tab-btn.active::after { transform: scaleX(1); }
+.tab-btn:hover { color: var(--navy); }
+.tab-content { }

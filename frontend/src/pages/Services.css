@@ -1,0 +1,33 @@
+.services-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.services-sidebar { position: sticky; top: 100px; }
+.domain-list { display: flex; flex-direction: column; gap: 10px; }
+.domain-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+.domain-count {
+  min-width: 28px; height: 22px;
+  border-radius: 100px;
+  background: var(--surface);
+  color: var(--navy);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+}
+
+@media (max-width: 900px) {
+  .services-layout { grid-template-columns: 1fr; }
+  .services-sidebar { position: static; }
+}
