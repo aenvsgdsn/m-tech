@@ -49,10 +49,27 @@ export default function Community() {
     (i.name.toLowerCase().includes(search.toLowerCase()))
   );
 
-  const filteredMentors = mentors.filter(m =>
+  function orderMentors(list) {
+    const copy = Array.from(list);
+    // bring Omama (match by first name) to front
+    const omamaIndex = copy.findIndex(m => m.name.toLowerCase().startsWith('omama'));
+    if (omamaIndex > -1) {
+      const [omama] = copy.splice(omamaIndex, 1);
+      copy.unshift(omama);
+    }
+    // move Saleha to the end
+    const salehaIndex = copy.findIndex(m => m.name.toLowerCase().includes('saleha'));
+    if (salehaIndex > -1) {
+      const [saleha] = copy.splice(salehaIndex, 1);
+      copy.push(saleha);
+    }
+    return copy;
+  }
+
+  const filteredMentors = orderMentors(mentors.filter(m =>
     (mentorTypeFilter === 'All' || m.type === mentorTypeFilter) &&
     (m.name.toLowerCase().includes(search.toLowerCase()) || m.specialization.toLowerCase().includes(search.toLowerCase()))
-  );
+  ));
 
   return (
     <>

@@ -115,8 +115,23 @@ export default function About() {
             <p>Industry professionals and experts guiding the next generation of tech leaders.</p>
           </div>
           <div className="grid-3 mentor-grid">
-            {mentors.map((mentor) => (
-              <div key={mentor.id} className="card mentor-card anim-fade-up">
+                    {(() => {
+                      const orderMentors = (list) => {
+                        const copy = Array.from(list);
+                        const omamaIndex = copy.findIndex(m => m.name.toLowerCase().startsWith('omama'));
+                        if (omamaIndex > -1) {
+                          const [omama] = copy.splice(omamaIndex, 1);
+                          copy.unshift(omama);
+                        }
+                        const salehaIndex = copy.findIndex(m => m.name.toLowerCase().includes('saleha'));
+                        if (salehaIndex > -1) {
+                          const [saleha] = copy.splice(salehaIndex, 1);
+                          copy.push(saleha);
+                        }
+                        return copy;
+                      };
+                      return orderMentors(mentors).map((mentor) => (
+                        <div key={mentor.id} className="card mentor-card anim-fade-up">
                 <div className="mentor-avatar-placeholder">
                   {mentor.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                 </div>
