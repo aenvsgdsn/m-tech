@@ -36,7 +36,9 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
-              <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="footer__logo-img" />
+              <div className="footer__logo-wrapper">
+                <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="footer__logo-img" />
+              </div>
               M Tech
             </Link>
             <p>Pakistan's leading platform for tech internships, courses, and digital services. Based in Haripur, KPK.</p>

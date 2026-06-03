@@ -73,7 +73,9 @@ export default function Navbar() {
       <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
         <div className="container navbar__inner">
           <Link to="/" className="navbar__brand">
-            <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="navbar__logo-img" />
+            <div className="navbar__logo-wrapper">
+              <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="navbar__logo-img" />
+            </div>
             <div className="brand-text">
               <span className="brand-name">M Tech</span>
               <span className="brand-tagline">Production & Marketing</span>
