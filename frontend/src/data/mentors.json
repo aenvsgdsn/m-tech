@@ -19,5 +19,6 @@
   { "id": 18, "name": "Azka Satti", "specialization": "AI, Data Science, Machine Learning, Deep Learning, Power BI, SQL, LLM", "role": "Data Analyst at KaiRiz Cyber Technologies", "type": "Industry Expert / Mentor", "linkedin": "https://linkedin.com/in/azkasatti" },
   { "id": 19, "name": "Usman Nawaz", "specialization": "Data Science, Machine Learning, Cloud Computing", "role": "Lecturer at PAF-IAST & Data Analyst at Behavidence", "type": "Industry Expert / Mentor", "linkedin": "https://linkedin.com/in/usman-nawaz-21532418a" },
   { "id": 20, "name": "Inshirah Hassan", "specialization": "Flutter App Development, React Developer", "role": "Ernst Mach Alumni", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/inshirah-hassan-93b12a27a" },
-  { "id": 21, "name": "Saad Malik", "specialization": "Full Stack Development", "role": "Full Stack Developer at Sigma Digital Solutions", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/saadmalik143/" }
+  { "id": 21, "name": "Saad Malik", "specialization": "Full Stack Development", "role": "Full Stack Developer at Sigma Digital Solutions", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/saadmalik143/" },
+  { "id": 22, "name": "Saleha Arshad", "specialization": "Flutter, Node.js, Web Development", "role": "Junior Software Engineer (CS26)", "type": "⭐ Roadmap Contributor", "linkedin": "#" }
 ]

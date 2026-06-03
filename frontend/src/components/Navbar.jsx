@@ -38,7 +38,6 @@ const NAV_ITEMS = [
     label: 'Explore', path: '/explore',
     children: [
       { label: 'Webinars', path: '/explore?tab=webinars' },
-      { label: 'Opportunities', path: '/explore?tab=opportunities' },
       { label: 'Collaborate', path: '/explore?tab=collaborate' },
     ],
   },

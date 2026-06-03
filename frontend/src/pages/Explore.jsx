@@ -25,8 +25,7 @@ export default function Explore() {
   const query = new URLSearchParams(location.search);
   const tabName = query.get('tab');
   let initialTab = 0;
-  if (tabName === 'opportunities') initialTab = 1;
-  else if (tabName === 'collaborate') initialTab = 2;
+  if (tabName === 'collaborate') initialTab = 1;
 
   const [catFilter, setCatFilter] = useState('All');
   const [oppType, setOppType] = useState('All');
@@ -64,7 +63,7 @@ export default function Explore() {
 
       <section className="section">
         <div className="container">
-          <TabSwitcher tabs={['Webinars', 'Opportunities', 'Collaborate']} initialTab={initialTab}>
+          <TabSwitcher tabs={['Webinars', 'Collaborate']} initialTab={initialTab}>
 
             {/* Webinars */}
             <div>
@@ -111,33 +110,6 @@ export default function Explore() {
                 <a href="https://whatsapp.com/channel/0029Vb7xfFhEFeXs3WWYni0e" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   Join WhatsApp Channel for Webinar Links
                 </a>
-              </div>
-            </div>
-
-            {/* Opportunities */}
-            <div>
-              <div className="explore-toolbar">
-                <div className="cat-filters">
-                  {OPP_TYPES.map(t => (
-                    <button key={t} className={`cat-btn${oppType === t ? ' active' : ''}`} onClick={() => setOppType(t)}>{t}</button>
-                  ))}
-                </div>
-              </div>
-              <div className="opportunities-grid">
-                {filteredOpps.map((opp, i) => (
-                  <div key={i} className={`opp-card card opp-${opp.status.toLowerCase()}`}>
-                    <div className="opp-header">
-                      <h4>{opp.name}</h4>
-                      <span className={`opp-status ${opp.status.toLowerCase()}`}>{opp.status}</span>
-                    </div>
-                    <p className="opp-areas">{opp.areas}</p>
-                    <div className="opp-meta">
-                      <div><strong>Type:</strong> {opp.type} • {opp.country}</div>
-                      <div><strong>Funding:</strong> {opp.amount}</div>
-                      <div><strong>Deadline:</strong> {opp.deadline}</div>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
 

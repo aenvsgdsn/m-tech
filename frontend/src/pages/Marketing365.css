@@ -18,14 +18,14 @@
   position: relative;
   overflow: hidden;
 }
-.plan-card--highlight {
+.card.plan-card--highlight {
   background: var(--navy);
   border-color: var(--navy);
 }
-.plan-card--highlight h3,
-.plan-card--highlight .plan-price,
-.plan-card--highlight .plan-features li { color: var(--white); }
-.plan-card--highlight p { color: rgba(255,255,255,0.7); }
+.card.plan-card--highlight h3,
+.card.plan-card--highlight .plan-price,
+.card.plan-card--highlight .plan-features li { color: var(--white); }
+.card.plan-card--highlight p { color: rgba(255,255,255,0.7); }
 .plan-badge {
   position: absolute;
   top: 16px; right: -20px;
