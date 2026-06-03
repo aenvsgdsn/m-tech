@@ -9,9 +9,9 @@ const NAV_ITEMS = [
   {
     label: 'Programs', path: '/programs',
     children: [
-      { label: 'Courses (75)', path: '/programs?tab=courses' },
+      { label: 'Courses', path: '/programs?tab=courses' },
       { label: 'Internship', path: '/programs?tab=internship' },
-      { label: 'Bootcamps (50)', path: '/programs?tab=bootcamps' },
+      { label: 'Bootcamps', path: '/programs?tab=bootcamps' },
     ],
   },
   {
@@ -74,19 +74,9 @@ export default function Navbar() {
       <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
         <div className="container navbar__inner">
           <Link to="/" className="navbar__brand">
-            <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="12" fill="url(#paint0_linear)"/>
-              <path d="M12 32V16L24 24L36 16V32" stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="24" cy="24" r="3" fill="#00B4D8"/>
-              <defs>
-                <linearGradient id="paint0_linear" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#ED4F5C"/>
-                  <stop offset="1" stopColor="#C93140"/>
-                </linearGradient>
-              </defs>
-            </svg>
+            <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="navbar__logo-img" />
             <div className="brand-text">
-              <span className="brand-name">M-Tech</span>
+              <span className="brand-name">M Tech</span>
               <span className="brand-tagline">Production & Marketing</span>
             </div>
           </Link>

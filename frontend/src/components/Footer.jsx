@@ -22,10 +22,10 @@ const QUICK_LINKS = [
 ];
 
 const PROGRAMS = [
-  { label: 'Courses (75+)', path: '/programs?tab=courses' },
+  { label: 'Courses', path: '/programs?tab=courses' },
   { label: 'Internship', path: '/programs?tab=internship' },
   { label: 'Training + Internship', path: '/programs?tab=training' },
-  { label: 'Bootcamps (50+)', path: '/programs?tab=bootcamps' },
+  { label: 'Bootcamps', path: '/programs?tab=bootcamps' },
 ];
 
 export default function Footer() {
@@ -36,7 +36,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer__brand">
             <Link to="/" className="footer__logo">
-              <span className="brand-m">M</span>-Tech
+              <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" className="footer__logo-img" />
+              M Tech
             </Link>
             <p>Pakistan's leading platform for tech internships, courses, and digital services. Based in Haripur, KPK.</p>
             <div className="footer__social">
@@ -90,8 +91,8 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; {new Date().getFullYear()} M-Tech Production & Marketing. All rights reserved.</p>
-          <p>Founded by <strong>Malik Mohazin Zahid</strong></p>
+          <p>&copy; {new Date().getFullYear()} M Tech Production & Marketing. All rights reserved.</p>
+          <p>Founded by <strong>Mohazin Zahid</strong></p>
         </div>
       </div>
     </footer>

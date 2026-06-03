@@ -2,15 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/jpeg" href="/assets/mtech-logo.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="M-Tech Production & Marketing — Pakistan's leading platform for tech internships, courses, digital services, and career opportunities." />
-    <meta name="keywords" content="M-Tech, internship Pakistan, tech courses, digital marketing, web development, cybersecurity, AI courses, Haripur" />
-    <meta property="og:title" content="M-Tech Production & Marketing" />
+    <meta name="description" content="M Tech Production & Marketing — Pakistan's leading platform for tech internships, courses, digital services, and career opportunities." />
+    <meta name="keywords" content="M Tech, internship Pakistan, tech courses, digital marketing, web development, cybersecurity, AI courses, Haripur" />
+    <meta property="og:title" content="M Tech Production & Marketing" />
     <meta property="og:description" content="Elevate Your Digital Presence & Career Today. 1000+ students trained, 75+ courses, 21 mentors." />
+    <meta property="og:image" content="/assets/mtech-logo.jpeg" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#1A3C6E" />
-    <title>M-Tech Production & Marketing</title>
+    <title>M Tech Production & Marketing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -20,10 +21,32 @@
         inset: 0;
         background: #0E1E3A;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         z-index: 9999;
         transition: opacity 0.5s ease;
+        gap: 24px;
+      }
+      .preloader-logo {
+        width: 80px;
+        height: 80px;
+        border-radius: 16px;
+        object-fit: cover;
+        animation: logoPulse 1.5s ease-in-out infinite;
+        box-shadow: 0 0 30px rgba(0, 180, 216, 0.3);
+      }
+      .preloader-text {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #ffffff;
+        letter-spacing: 0.05em;
+        opacity: 0;
+        animation: fadeInText 0.8s ease 0.3s forwards;
+      }
+      .preloader-text span {
+        color: #ED4F5C;
       }
       .spinner {
         width: 48px;
@@ -34,11 +57,23 @@
         animation: spin 1s linear infinite;
       }
       @keyframes spin { 100% { transform: rotate(360deg); } }
+      @keyframes logoPulse {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(0, 180, 216, 0.3); }
+        50% { transform: scale(1.08); box-shadow: 0 0 50px rgba(0, 180, 216, 0.5); }
+      }
+      @keyframes fadeInText {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
       body.loaded #preloader { opacity: 0; pointer-events: none; }
     </style>
   </head>
   <body>
-    <div id="preloader"><div class="spinner"></div></div>
+    <div id="preloader">
+      <img src="/assets/mtech-logo.jpeg" alt="M Tech Logo" class="preloader-logo" />
+      <div class="preloader-text">M <span>Tech</span> Production & Marketing</div>
+      <div class="spinner"></div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>

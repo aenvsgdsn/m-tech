@@ -5,26 +5,52 @@
   align-items: start;
 }
 .services-sidebar { position: sticky; top: 100px; }
-.domain-list { display: flex; flex-direction: column; gap: 10px; }
+.domain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .domain-list li {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 0.88rem;
-  color: var(--text-dark);
-  font-weight: 500;
+  color: var(--text-mid);
 }
 .domain-count {
-  min-width: 28px; height: 22px;
-  border-radius: 100px;
-  background: var(--surface);
-  color: var(--navy);
-  font-size: 0.75rem;
-  font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+/* Service contact button */
+.btn-service-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: #25D366;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-service-contact:hover {
+  background: #1da851;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 @media (max-width: 900px) {

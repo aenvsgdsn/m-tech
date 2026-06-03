@@ -15,8 +15,16 @@
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--white);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 14px;
+}
+.footer__logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 .footer__brand p {
   font-size: 0.88rem;

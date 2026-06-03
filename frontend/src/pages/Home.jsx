@@ -65,14 +65,14 @@ export default function Home() {
       <section className="hero">
         <div className="hero__bg" />
         <div className="container hero__content">
-          <div className="badge anim-fade-up">Summer 2026 Internship — Now Open</div>
+          <div className="badge anim-fade-up">Summer 2026 Internship Now Open</div>
           <h1 className="anim-fade-up anim-delay-1">
             Elevate Your <span className="text-teal">Digital Career</span><br />
             with M-Tech
           </h1>
           <p className="hero__sub anim-fade-up anim-delay-2">
             Pakistan's leading platform for tech internships, professional courses, and digital services.
-            Based in Haripur, KPK — accessible nationwide.
+            Based in Haripur, KPK. Accessible nationwide.
           </p>
           <div className="hero__actions anim-fade-up anim-delay-3">
             <button className="btn btn-primary" onClick={() => openModal('Internship')}>
@@ -103,7 +103,7 @@ export default function Home() {
           <div className="section-label">
             <div className="badge">Why M-Tech</div>
             <h2>Built for Real-World Impact</h2>
-            <p>We don't just teach — we mentor, build, and launch. Every program is designed to deliver practical results.</p>
+            <p>We don't just teach. We mentor, build, and launch. Every program is designed to deliver practical results.</p>
           </div>
           <div className="grid-4">
             {HIGHLIGHTS.map((h, i) => (
@@ -124,9 +124,9 @@ export default function Home() {
             <div className="badge">About Us</div>
             <h2>Empowering the Next Generation of Tech Leaders</h2>
             <p>
-              M-Tech Production and Marketing is dedicated to bridging the gap between academic learning and industry requirements. 
-              Based in Pakistan, we provide a dynamic platform for university students and fresh graduates to gain real-world 
-              experience through project-based learning and expert mentorship.
+              M Tech Production and Marketing is dedicated to bridging the gap between academic learning and industry requirements. 
+              Based in Pakistan, we provide a dynamic platform for university students and fresh graduates to gain real world 
+              experience through project based learning and expert mentorship.
             </p>
             <Link to="/about" className="btn btn-outline" style={{marginTop:'16px'}}>Know More About Us</Link>
           </div>

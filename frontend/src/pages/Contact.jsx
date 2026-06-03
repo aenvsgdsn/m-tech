@@ -85,7 +85,7 @@ export default function Contact() {
           <div className="contact-form-wrap">
             <div className="card" style={{padding:'36px'}}>
               <h3 style={{marginBottom:'6px'}}>Send a Message</h3>
-              <p style={{marginBottom:'28px', fontSize:'0.9rem'}}>We typically respond within 24–48 hours.</p>
+              <p style={{marginBottom:'28px', fontSize:'0.9rem'}}>We typically respond within 24 to 48 hours.</p>
 
               {!sent ? (
                 <form onSubmit={handleSubmit}>
@@ -115,13 +115,36 @@ export default function Contact() {
                 <div className="contact-success anim-scale-in">
                   <div className="success-icon">&#10003;</div>
                   <h4>Message Sent!</h4>
-                  <p>Thank you for reaching out. We'll get back to you within 24–48 hours.</p>
+                  <p>Thank you for reaching out. We'll get back to you within 24 to 48 hours.</p>
                   <button className="btn btn-outline" style={{marginTop:'16px'}} onClick={() => setSent(false)}>Send Another</button>
                 </div>
               )}
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Google Maps */}
+      <section className="section bg-surface">
+        <div className="container">
+          <div className="section-label">
+            <div className="badge">Location</div>
+            <h2>Find Us Here</h2>
+            <p>Visit our office in Haripur, Khyber Pakhtunkhwa, Pakistan.</p>
+          </div>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106672.21497076596!2d72.8573!3d33.9946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9ae00be08573%3A0xc549c24f8a62e65c!2sHaripur%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+              width="100%"
+              height="400"
+              style={{border: 0, borderRadius: '12px'}}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="M Tech Office Location"
+            />
+          </div>
         </div>
       </section>
     </>

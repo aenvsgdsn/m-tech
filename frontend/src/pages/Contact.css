@@ -48,3 +48,14 @@
   .contact-layout { grid-template-columns: 1fr; }
   .contact-info { position: static; }
 }
+
+/* Map */
+.map-container {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--white);
+}
+.map-container iframe {
+  display: block;
+}
