@@ -131,7 +131,7 @@ export default function Home() {
             <Link to="/about" className="btn btn-outline" style={{marginTop:'16px'}}>Know More About Us</Link>
           </div>
           <div className="about-preview-img-wrap anim-scale-in">
-            <img src="/assets/founder.jpeg" alt="About M-Tech" className="about-preview-img" />
+            <img src="/assets/home-about.jpeg" alt="About M-Tech" className="about-preview-img" />
             <div className="about-img-decor"></div>
           </div>
         </div>
