@@ -126,7 +126,7 @@ export default function About() {
                         const salehaIndex = copy.findIndex(m => m.name.toLowerCase().includes('saleha'));
                         if (salehaIndex > -1) {
                           const [saleha] = copy.splice(salehaIndex, 1);
-                          copy.push(saleha);
+                          copy.splice(4, 0, saleha);
                         }
                         return copy;
                       };
@@ -153,7 +153,8 @@ export default function About() {
                   </a>
                 </div>
               </div>
-            ))}
+            ));
+          })()}
           </div>
         </div>
       </section>
