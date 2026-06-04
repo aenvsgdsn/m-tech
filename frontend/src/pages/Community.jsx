@@ -57,11 +57,11 @@ export default function Community() {
       const [omama] = copy.splice(omamaIndex, 1);
       copy.unshift(omama);
     }
-    // move Saleha to the end
+    // move Saleha to the 5th position
     const salehaIndex = copy.findIndex(m => m.name.toLowerCase().includes('saleha'));
     if (salehaIndex > -1) {
       const [saleha] = copy.splice(salehaIndex, 1);
-      copy.push(saleha);
+      copy.splice(4, 0, saleha);
     }
     return copy;
   }
