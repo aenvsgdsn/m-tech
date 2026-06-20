@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import StatsCounter from '../components/StatsCounter';
 import RegistrationModal from '../components/RegistrationModal';
+import UpdatesSlider from '../components/UpdatesSlider';
 import './Home.css';
 
 const STATS = [
@@ -136,6 +137,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <UpdatesSlider />
 
       {/* ---- Tracks ---- */}
       <section className="section bg-surface">
