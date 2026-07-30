@@ -173,6 +173,7 @@ p  { color: var(--text-mid); }
 .hero-community::before { background: linear-gradient(135deg, rgba(14,30,58,0.92) 0%, rgba(26,60,110,0.85) 100%), url('/assets/programs-bg.png') center/cover no-repeat; }
 .hero-explore::before { background: linear-gradient(135deg, rgba(14,30,58,0.92) 0%, rgba(26,60,110,0.85) 100%), url('/assets/services-bg.png') center/cover no-repeat; }
 .hero-faq::before { background: linear-gradient(135deg, rgba(14,30,58,0.92) 0%, rgba(26,60,110,0.85) 100%), url('/assets/about-bg.png') center/cover no-repeat; }
+.hero-careers::before { background: linear-gradient(135deg, rgba(14,30,58,0.92) 0%, rgba(26,60,110,0.85) 100%), url('/assets/services-bg.png') center/cover no-repeat; }
 
 /* ---- Form elements ---- */
 .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }

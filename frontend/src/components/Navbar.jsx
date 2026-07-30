@@ -34,11 +34,11 @@ const NAV_ITEMS = [
       { label: 'Ambassadors', path: '/community?tab=ambassadors' },
     ],
   },
-  {
-    label: 'Explore', path: '/explore',
+  { label: 'Explore', path: '/explore',
     children: [
       { label: 'Webinars', path: '/explore?tab=webinars' },
       { label: 'Collaborate', path: '/explore?tab=collaborate' },
+      { label: 'Careers', path: '/careers' },
     ],
   },
   { label: 'Contact', path: '/contact' },

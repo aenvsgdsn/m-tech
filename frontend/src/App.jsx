@@ -10,6 +10,7 @@ import Marketing365 from './pages/Marketing365';
 import Community from './pages/Community';
 import Explore from './pages/Explore';
 import Contact from './pages/Contact';
+import Careers from './pages/Careers';
 import FAQ from './pages/FAQ';
 
 function ScrollToTop() {
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/marketing365" element={<Marketing365 />} />
           <Route path="/community"    element={<Community />} />
           <Route path="/explore"      element={<Explore />} />
+          <Route path="/careers"      element={<Careers />} />
           <Route path="/contact"      element={<Contact />} />
           <Route path="/faq"          element={<FAQ />} />
           <Route path="*"             element={<Home />} />

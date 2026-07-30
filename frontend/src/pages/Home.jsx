@@ -165,6 +165,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---- Careers Preview ---- */}
+      <section className="section bg-white">
+        <div className="container about-preview" style={{ gap: '60px' }}>
+          <div className="about-preview-img-wrap anim-scale-in" style={{ order: 1 }}>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Join Our Team" className="about-preview-img" style={{ borderRadius: '16px' }} />
+            <div className="about-img-decor" style={{ left: '-20px', right: 'auto', background: 'var(--teal)' }}></div>
+          </div>
+          <div className="about-preview-content" style={{ order: 2 }}>
+            <div className="badge">We Are Hiring</div>
+            <h2>Build Your Career with Us</h2>
+            <p>
+              Looking for an internship in your favorite tech stack? We are currently hiring passionate individuals for various roles including Full Stack Development, Mobile App Development, and AI Automation. Join our dynamic team and work on real-world projects.
+            </p>
+            <Link to="/careers" className="btn btn-primary" style={{marginTop:'16px'}}>Explore Opportunities</Link>
+          </div>
+        </div>
+      </section>
+
       {/* ---- CTA Strip ---- */}
       <section className="cta-strip bg-navy">
         <div className="container cta-strip__inner">
