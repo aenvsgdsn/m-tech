@@ -56,6 +56,17 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          <div className="founder-card card" style={{ marginTop: '2rem' }}>
+            <img src="/assets/dr_qureshi.png" alt="Dr. Muhammad Shuaib Qureshi" className="founder-avatar" />
+            <div className="founder-info">
+              <div className="badge">Senior advisor and consultant</div>
+              <h2>Dr. Muhammad Shuaib Qureshi</h2>
+              <p>
+                Dr. M. S Qureshi brings 16+ years of cross-functional expertise across academia, industrial research, and enterprise technology consulting. At M Tech, he serves as a key advisor and consultant, providing strategic guidance on marketing strategies and overall company management. Furthermore, he leverages his extensive academic background to help navigate university-related initiatives and effectively address institutional challenges, ensuring seamless collaboration between M Tech and its educational partners.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
