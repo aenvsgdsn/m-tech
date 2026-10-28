@@ -98,6 +98,7 @@ export default function About() {
               { initials: 'IZ', name: 'Ms. Isra Zafat', role: 'Lecturer in Computer Science', bio: 'Focuses on Generative Machine Learning, including GANs and SMOTE, and applies Generative AI to real-world challenges.' },
               { initials: 'SJ', name: 'Mr. Salman Javed', role: 'Lecturer in Data Science | MS Data Science, MBA', bio: 'Specializes in Demand Forecasting and Predictive Modeling, with work in time-series analysis, ensemble learning, and deep learning.' },
               { initials: 'ZN', name: 'Ms. Zawish Noor', role: 'Lab Demonstrator in Computer Science', bio: 'Works on Remote Sensing, Geospatial AI, and satellite flood mapping, using cloud technologies for disaster preparedness.' },
+              { initials: 'UN', name: 'Mr. Usman Nawaz', role: 'Lecturer & Machine Learning Researcher at PAF-IAST', bio: 'Works on machine learning and data analysis for health and biomedical data, with deep-learning research on Urdu speech recognition.' },
             ].map((b) => (
               <div key={b.name} className="card board-card anim-fade-up">
                 <div className="board-avatar">{b.initials}</div>
