@@ -1,5 +1,5 @@
 [
-  { "id": 1, "name": "Omama Sajid", "specialization": "Flutter, Firebase, API Integration, Node.js, Next JS, AI & Computer Vision", "role": "Software Engineer", "type": "Roadmap Contributor + Mentor", "linkedin": "https://linkedin.com/in/omama-sajid-19bb72269" },
+  { "id": 1, "name": "Omama Sajid", "specialization": "AI, Computer Vision, Machine Learning, AI Safety, Flutter, Firebase, Node.js, Next JS", "role": "Co-Founder | Lab Engineer in Computer Science", "type": "Co-Founder + Mentor", "linkedin": "https://linkedin.com/in/omama-sajid-19bb72269" },
   { "id": 2, "name": "Hania Rasheed", "specialization": "Data Science, AI, Analytics", "role": "Research Assistant | Data Scientist", "type": "Roadmap Contributor + Mentor", "linkedin": "https://linkedin.com/in/hania-rasheed-a39b6a243" },
   { "id": 3, "name": "Abdullah Sajid", "specialization": "AI in Healthcare, Multi-Modal AI, Real-time Systems, C#, Flutter | AI Engineer Mediatiz", "role": "Research Associate at DigitalsGalaxy", "type": "Roadmap Contributor + Mentor", "linkedin": "https://linkedin.com/in/abdullah-sajid-a3a0a8208" },
   { "id": 4, "name": "Jawad Safdar", "specialization": "Data Science, Data Engineering, AI, Analytics", "role": "Lab Engineer at PAF-IAST | Gold Medalist", "type": "Roadmap Contributor + Mentor", "linkedin": "https://linkedin.com/in/jawad-safder-10b506241" },
@@ -19,5 +19,9 @@
   { "id": 17, "name": "Maryam Arshad", "specialization": "AI, Data Science, Machine Learning, Deep Learning, Power BI, SQL", "role": "AI Intern at HeadStarterAI", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/maryam-arshad015" },
   { "id": 18, "name": "Azka Satti", "specialization": "AI, Data Science, Machine Learning, Deep Learning, Power BI, SQL, LLM", "role": "Data Analyst at KaiRiz Cyber Technologies", "type": "Industry Expert / Mentor", "linkedin": "https://linkedin.com/in/azkasatti" },
   { "id": 19, "name": "Usman Nawaz", "specialization": "Data Science, Machine Learning, Cloud Computing", "role": "Lecturer at PAF-IAST & Data Analyst at Behavidence", "type": "Industry Expert / Mentor", "linkedin": "https://linkedin.com/in/usman-nawaz-21532418a" },
-  { "id": 20, "name": "Inshirah Hassan", "specialization": "Flutter App Development, React Developer", "role": "Ernst Mach Alumni", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/inshirah-hassan-93b12a27a" }
+  { "id": 20, "name": "Inshirah Hassan", "specialization": "Flutter App Development, React Developer", "role": "Ernst Mach Alumni", "type": "Industry Expert / Mentor", "linkedin": "https://www.linkedin.com/in/inshirah-hassan-93b12a27a" },
+  { "id": 22, "name": "Mahnoor", "specialization": "LLMs, RAG, NLP, Explainable AI, Data Structures & Algorithms", "role": "Lecturer in Computer Science and Data Science", "type": "Board of Directors", "linkedin": null },
+  { "id": 23, "name": "Isra Zafat", "specialization": "Generative AI, GANs, SMOTE, Deep Learning", "role": "Lecturer in Computer Science", "type": "Board of Directors", "linkedin": null },
+  { "id": 24, "name": "Salman Javed", "specialization": "Demand Forecasting, Predictive Modeling, Time-Series, Generative AI, Big Data", "role": "Lecturer in Data Science | MS Data Science, MBA", "type": "Board of Directors", "linkedin": null },
+  { "id": 25, "name": "Zawish Noor", "specialization": "Remote Sensing, Geospatial AI, Satellite Image Analysis, Cloud Computing, Android", "role": "Lab Demonstrator in Computer Science", "type": "Board of Directors", "linkedin": null }
 ]
