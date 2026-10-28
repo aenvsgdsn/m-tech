@@ -63,7 +63,7 @@ export default function About() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container about-founder">
           <div className="founder-card card">
-            <div className="founder-avatar founder-avatar--initials">OS</div>
+            <img src="/assets/omama-sajid.png" alt="Ms. Omama Sajid" className="founder-avatar" />
             <div className="founder-info">
               <div className="badge">Co-Founder</div>
               <h2>Ms. Omama Sajid</h2>
