@@ -32,6 +32,21 @@
   color: var(--text-mid);
 }
 .founder-contact { display: flex; gap: 12px; }
+.founder-avatar--initials {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--navy, #1e3a5f); color: #fff;
+  font-size: 2rem; font-weight: 700;
+}
+
+/* Board of Directors */
+.board-card { text-align: center; padding: 24px 20px; }
+.board-card h4 { margin: 10px 0 4px; }
+.board-avatar {
+  width: 72px; height: 72px; margin: 0 auto;
+  border-radius: 50%; background: var(--navy, #1e3a5f); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem; font-weight: 700;
+}
 .btn-navy {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 12px 28px; border-radius: var(--radius-md);

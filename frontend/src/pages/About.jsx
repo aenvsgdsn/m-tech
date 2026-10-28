@@ -59,6 +59,58 @@ export default function About() {
         </div>
       </section>
 
+      {/* Co-Founder */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container about-founder">
+          <div className="founder-card card">
+            <div className="founder-avatar founder-avatar--initials">OS</div>
+            <div className="founder-info">
+              <div className="badge">Co-Founder</div>
+              <h2>Ms. Omama Sajid</h2>
+              <p>
+                Omama Sajid is a Lab Engineer in Computer Science with a strong interest in Artificial Intelligence,
+                Machine Learning, and Deep Learning. Her research focuses on Computer Vision, AI Safety, and developing
+                machine learning models for real-world problems. She has experience in AI research, software development,
+                and teaching programming and Machine Learning, and she enjoys helping students understand complex concepts
+                through practical examples. She aims to further develop her research skills and contribute to meaningful
+                work in Artificial Intelligence.
+              </p>
+              <div className="founder-contact">
+                <a href="https://linkedin.com/in/omama-sajid-19bb72269" target="_blank" rel="noopener noreferrer" className="btn btn-navy">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Board of Directors */}
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="section-label">
+            <div className="badge">Board of Directors</div>
+            <h2>Our Board</h2>
+          </div>
+          <div className="grid-3 board-grid">
+            {[
+              { initials: 'M', name: 'Ms. Mahnoor', role: 'Lecturer in Computer Science and Data Science', bio: 'Works on Large Language Models, Retrieval-Augmented Generation (RAG), NLP, and Explainable AI, and inspires students through effective teaching.' },
+              { initials: 'IZ', name: 'Ms. Isra Zafat', role: 'Lecturer in Computer Science', bio: 'Focuses on Generative Machine Learning, including GANs and SMOTE, and applies Generative AI to real-world challenges.' },
+              { initials: 'SJ', name: 'Mr. Salman Javed', role: 'Lecturer in Data Science | MS Data Science, MBA', bio: 'Specializes in Demand Forecasting and Predictive Modeling, with work in time-series analysis, ensemble learning, and deep learning.' },
+              { initials: 'ZN', name: 'Ms. Zawish Noor', role: 'Lab Demonstrator in Computer Science', bio: 'Works on Remote Sensing, Geospatial AI, and satellite flood mapping, using cloud technologies for disaster preparedness.' },
+            ].map((b) => (
+              <div key={b.name} className="card board-card anim-fade-up">
+                <div className="board-avatar">{b.initials}</div>
+                <h4>{b.name}</h4>
+                <p className="mentor-role">{b.role}</p>
+                <p className="mentor-spec">{b.bio}</p>
+                <span className="mentor-type-badge">Board of Directors</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="section bg-surface">
         <div className="container">
