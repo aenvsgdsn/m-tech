@@ -94,7 +94,7 @@ export default function About() {
           </div>
           <div className="grid-3 board-grid">
             {[
-              { initials: 'M', name: 'Ms. Mahnoor', role: 'Lecturer in Computer Science and Data Science', bio: 'Works on Large Language Models, Retrieval-Augmented Generation (RAG), NLP, and Explainable AI, and inspires students through effective teaching.' },
+              { initials: 'M', name: 'Ms. Mahnoor', role: 'Lecturer | Data Scientist | Researcher', bio: 'Works on Large Language Models, Retrieval-Augmented Generation (RAG), NLP, and Explainable AI, and inspires students through effective teaching.' },
               { initials: 'IZ', name: 'Ms. Isra Zafat', role: 'Lecturer in Computer Science', bio: 'Focuses on Generative Machine Learning, including GANs and SMOTE, and applies Generative AI to real-world challenges.' },
               { initials: 'SJ', name: 'Mr. Salman Javed', role: 'Lecturer in Data Science | MS Data Science, MBA', bio: 'Specializes in Demand Forecasting and Predictive Modeling, with work in time-series analysis, ensemble learning, and deep learning.' },
               { initials: 'ZN', name: 'Ms. Zawish Noor', role: 'Lab Demonstrator in Computer Science', bio: 'Works on Remote Sensing, Geospatial AI, and satellite flood mapping, using cloud technologies for disaster preparedness.' },
