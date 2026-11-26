@@ -7,6 +7,7 @@ import About from './pages/About';
 import Programs from './pages/Programs';
 import Services from './pages/Services';
 import Marketing365 from './pages/Marketing365';
+import PrintingBranding from './pages/PrintingBranding';
 import Community from './pages/Community';
 import Explore from './pages/Explore';
 import Contact from './pages/Contact';
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/about"        element={<About />} />
           <Route path="/programs"     element={<Programs />} />
           <Route path="/services"     element={<Services />} />
+          <Route path="/printing-branding" element={<PrintingBranding />} />
           <Route path="/marketing365" element={<Marketing365 />} />
           <Route path="/community"    element={<Community />} />
           <Route path="/explore"      element={<Explore />} />
