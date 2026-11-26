@@ -23,6 +23,7 @@ const NAV_ITEMS = [
       { label: 'Cybersecurity', path: '/services#cyber' },
       { label: 'AI & Automation', path: '/services#ai' },
       { label: 'Digital Marketing', path: '/services#marketing' },
+      { label: 'Printing & Branding', path: '/printing-branding' },
     ],
   },
   { label: 'Marketing365', path: '/marketing365' },

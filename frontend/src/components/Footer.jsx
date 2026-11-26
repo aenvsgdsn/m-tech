@@ -14,6 +14,7 @@ const QUICK_LINKS = [
   { label: 'About Us', path: '/about' },
   { label: 'Programs', path: '/programs' },
   { label: 'Services', path: '/services' },
+  { label: 'Printing & Branding', path: '/printing-branding' },
   { label: 'Marketing365', path: '/marketing365' },
   { label: 'Community', path: '/community' },
   { label: 'Explore', path: '/explore' },
